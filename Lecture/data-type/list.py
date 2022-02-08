@@ -121,3 +121,16 @@ print(a)
 # 수학: 55
 # 영어: 75
 
+# 연습문제 4
+# ["Life", "is", "too", "short"] 리스트를 Life is too short 문자열 string로 만들어서 출력하시오.
+a = ["Life", "is", "too", "short"]
+a = str(a)
+print(a)
+a = a.replace("'", "")
+a = a.replace(","," ")
+a = a.replace("[", "")
+a = a.replace("]", "")
+print(a)
+
+a = ["Life", "is", "too", "short"]
+print(a[0], a[1], a[2], a[3])

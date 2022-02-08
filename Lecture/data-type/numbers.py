@@ -35,7 +35,6 @@ print(x ** y)
 a = 3
 b = 7
 print(a % b)
-
+print(7/4) # 일반 나누기
 # // -> 나눗셈 후 몫을 반환하는 // 연산자
-print(7/4)
 print(7//4)
