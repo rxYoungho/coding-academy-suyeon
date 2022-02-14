@@ -1,7 +1,5 @@
 # Library 
-from tkinter import *
-
-from sqlalchemy import column # tkinter라는 소스코드의 모든 기능을 가져오겠다 (open Source)
+from tkinter import * # tkinter라는 소스코드의 모든 기능을 가져오겠다 (open Source)
 
 win = Tk() 
 win.geometry("312x350") # 가로 312 pixel, 세로 324 pixel로 창을 만들겠다 (win = window)
