@@ -93,3 +93,45 @@ for num in a:
     result.append(num*3)
     
 print(result)
+
+# 아래랑 동일 한 코드
+for num in a:
+    if num%2==0:
+        result.append(num * 3)
+
+# 찐 고수 인정하는 코드
+a = [1,2,3,4]
+result = [num * 3 for num in a if num % 2 == 0]
+print(result)
+# result [ 1, 6, 3, 12]
+
+"""
+[ONE LINED CODE!!]
+
+[표현식 for 객체 in 반복가능객체 if 조건문]
+[num * 3 for num in a if num % 2 == 0]
+"""
+
+# 너무 고수여서 ... 잘 안쓰게 됨 ㅠㅠ 
+result = [x * y for x in range(2,10)
+            for y in range(1,10)]
+
+print(result)
+
+
+"""
+연습문제
+1. for문을 사용해서 1 부터 100까지의 숫자를 출려하시오.
+
+2. A 학급에 총 10명의 학생이 있다. 이 학생들의 중간고사 점수는 다음과 같다.
+    ls = [70, 60, 55, 75, 95, 90, 80, 80, 85, 100]
+    for문을 사용하여 A 학급의 평균 점수를 구해 보자.
+    합계 !!
+
+3. 리스트 중에서 홀수에만 2를 곱하여 저장하는 코드가 있다. list comprehension으로 바꿔라!
+"""
+numbers = [1,2,3,4,5]
+result = []
+for n in numbers:
+    if n % 2 == 1:
+        result.append(n*2)
