@@ -28,3 +28,5 @@ a = 추가모드 - 파일의 마지막줄에 새로운 내용을 추가할 때 �
 with open("/Users/Danny/Desktop/GitHub/coding-academy-suyeon/Lecture/input-output/새파일.txt", "a") as f:
     data = "\n11번째 줄입니다."
     f.write(data)
+
+
