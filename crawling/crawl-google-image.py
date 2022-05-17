@@ -47,14 +47,12 @@ def crawling_img(name):
             urllib.request.urlretrieve(imgUrl, path+name+str(count)+".jpg")
             count+=1
 
-            if count >= 10:
+            if count >= 100:
                 break
         except:
             pass
     driver.close()
 
-idols = ["창균", "지코", "태연"]
+idols = ["창균", "지코", "몬스타액스기현", "백현"]
 for each in idols:
     crawling_img(each)
-
-    
