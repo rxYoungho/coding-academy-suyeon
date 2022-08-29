@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/44462bcb1d.js" crossorigin="anonymous"></script>
+
+    </head>
+
+    <style>
+        div {
+            font-family: "Noto+Sans+KR";
+        }
+
+        .margin {
+            margin-bottom: 20px;
+            border: 1px solid #000000;
+        }
+
+        .padding {
+            padding-left: 20px;
+            border: 1px solid #000000;
+        }
+
+        /* 
+        block: h1 ~ h6, div, p, form
+         - 화면 전체를 감싸는 블록을 형성
+        inline: a, img, span
+         - 하나에 딱 붙어서 사는 태그들
+        */
+        
+        h1 {
+            color: white;
+            text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+            border: 1px solid black;
+            text-align: center;
+            display: inline;
+        }
+
+        h2 {
+            text-shadow: 0 0 3px red;
+            border: 1px solid black;
+            text-align: left;
+        }
+
+        h3 {
+            text-shadow: 0 0 3px red, 0 0 5px blue;
+            border: 1px solid black;
+            text-align: right;
+        }
+
+        .justify {
+            /* border:1px solid black; */
+            text-indent: 50px;
+            padding: 10px;
+            width: 30%;
+            text-align: justify;
+            float: left;
+        }
+        .justify2 {
+            /* border:1px solid black; */
+            text-indent: 50px;
+            padding: 10px;
+            width: 30%;
+            text-align: justify;
+            float: left;
+        }
+        .justify3 {
+            /* border:1px solid black; */
+            text-indent: 50px;
+            padding: 10px;
+            width: 30%;
+            text-align: justify;
+            float: left;
+            letter-spacing: -1px;
+            line-height: 1.5;
+        }
+        div.static {
+            position: static;
+            border: 3px solid black;
+        }
+
+        div.relative {
+            position: relative;
+            left:30px;
+            right:30px;
+            top:30px;
+            width: 400px;
+            height: 200px;
+            border: 3px dotted black;
+        }
+
+        div.absolute {
+            position: absolute;
+            top: 80px;
+            left: 40px;
+            width:100px;
+            height: 200px;
+            border: 3px solid blue;
+        }
+
+        /* div.fixed {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;   
+            background-color: red;
+            border: 3px solid red;
+        } */
+
+        div.sticky {
+            color:white;
+            position: -webkit-sticky;
+            position: sticky;
+            bottom: 0; 
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: blue;
+            border: 3px solid red;
+        }
+    </style>
+
+    <body>
+        <h2>CSS Margins / Padding</h2>
+        
+        
+        
+
+        <div style="padding-bottom: 2000px">
+            
+            <div class="margin">
+                <i class="fa-solid fa-cart-shopping"></i>
+                이것은 마진 70px 입니다.
+            </div>
+
+            <div class="padding">
+                <i class="fa-solid fa-money-bill-1-wave"></i>
+                이것은 패딩 70px 입니다.
+            </div>
+
+            <h1>Heading 1 (center)</h1>
+            <h1>Heading 1 (center)</h1>
+            <h1>Heading 1 (center)</h1>
+            <h1>Heading 1 (center)</h1>
+
+            <h2>Heading 2 (left)</h2>
+            <h3>Heading 3 (right)</h3>
+
+            <div class="justify">
+                Zoom is a video and audio conferencing tool with easy collaboration, chat, screen sharing and more across mobile devices, desktops, and telephones. **Get the Zoom App and log in via SSO (use your NetID and NetID Password)** Be sure to check for and apply updates on your Zoom app on your computer regularly.
+            </div>
+            <div class="justify2">
+                Zoom is a video and audio conferencing tool with easy collaboration, chat, screen sharing and more across mobile devices, desktops, and telephones. **Get the Zoom App and log in via SSO (use your NetID and NetID Password)** Be sure to check for and apply updates on your Zoom app on your computer regularly.
+            </div>
+            <div class="justify3">
+                <b>Z</b>oom is a video and audio conferencing tool with easy collaboration, chat, screen sharing and more across mobile devices, desktops, and telephones. **Get the Zoom App and log in via SSO (use your NetID and NetID Password)** Be sure to check for and apply updates on your Zoom app on your computer regularly.
+            </div>
+            
+            <div class="static">
+                This div element has position: static;
+            </div>
+
+            <div class="sticky">상품 구매하기</div>
+
+            <div class="relative">
+                This div element has position: relative;
+                <div class="absolute">
+                    This div element has position: absolute;
+                </div>
+            </div>
+
+            <div class="fixed">
+                This div element has postion: fixed;
+            </div>
+
+            
+
+            <!-- 
+                position 속성 별 정리
+                - static: element를 문서 흐름에 맞추어 배치.
+                - relative: 이 전 요소에 자연스럽게 연결하여 위치를 지정. 
+                - absolute: 원하는 위치에 지정해서 배치 
+                - fixed: 지정한 위치에 고정시켜서 배치
+                - sticky: 위치에 따라서 동작방식이 달라짐. 요소가 임계점(scroll 박스 기준)이전에는 relative와 같이 동작. 그 이후에는
+                fixed처럼 동작을 함.
+            -->
+        </div>
+    </body>
+</html>
