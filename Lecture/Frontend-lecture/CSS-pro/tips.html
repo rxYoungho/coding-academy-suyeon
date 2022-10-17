@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        
+        <style>
+            #first {
+                border: 1px solid red;
+                margin: 100px 100px;
+            }
+            #second {
+                border: 1px solid blue;
+                position: fixed;
+            }
+            #third {
+                border: 1px solid green;
+                margin: 100px 100px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="first">first</div>
+        <div id="second">second</div>
+        <div id="third">third</div>
+       
+    </body>
+</html>
+
+<!-- 
+    <Display>
+        Block-level
+            - Always Starts on a new line (신규 라인)
+            - Takes up the full width (한 줄 다채움)
+            1. div 
+            2. h1 - h6
+            3. p 
+            4. form
+            5. header
+            6. footer
+            7. section
+
+        Inline-level
+            - Does not start from a new line 
+            - margin/width/height/padding/line-height가 적용 불가함
+
+        Inline-block 
+            - Does not start from a new line (신규 라인이 생성되지 않고 그자리에 머무름)
+            - Takes up as much width as necessary (width를 정해 줄 수 있음)
+
+        None:
+            - 아무것도 보이지 않음 
+
+    <Position> -> top, right, bottom, left
+        Static : 일반적인 흐름을 따라 요소를 배치할 때
+        Relative : 일반적으로 배치하되, 자신을 기준으로 위치 값(top, right, bottom, left)을 적용
+        Absolute : 일반적인 흐름이 아닌 가장 가까운 "부모 요소"에 따라 상대적으로 배치한다. 부모에 특정한 
+                    포지션 속성이 없을경우에는 나의 상위 컨테이너(태그, static포지션 포함) 블록을 기준으로
+                    배치합니다.
+        Fixed : 화면상의 특정한 위치에 고정됩니다. 스크롤을 내려도 해당 요소는 고정됨
+        Sticky : "일반적으로 배치" 스크롤 되는 가장 가까운 요소에 대해 오프셋이 적용된다. 
+ -->
